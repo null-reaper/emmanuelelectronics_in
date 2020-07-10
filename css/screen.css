@@ -111,3 +111,21 @@ nav ul a {
     padding-top: 0.1em;
   }
 }
+
+/* Module Styles */
+
+header,
+footer {
+  background-color: black;
+  color: white;
+}
+
+nav {
+  background-color: white;
+}
+
+nav a {
+  background-color: #222;
+  color: #bbb;
+  padding: 0.25em;
+}
