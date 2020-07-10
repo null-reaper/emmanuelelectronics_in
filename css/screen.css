@@ -82,3 +82,32 @@ main {
   height: 40vh;
   padding: 0 0.5em;
 }
+
+/* Layout Styles */
+
+i {
+  display: block;
+}
+
+nav ul {
+  display: flex;
+  flex-direction: column;
+}
+
+nav ul a {
+  display: flex;
+  flex-direction: column;
+}
+
+@supports (display:flex) {
+
+  nav ul li {
+    flex: 1 0 auto;
+    padding-bottom: 0.1em;
+    text-align: center;
+  }
+
+  nav ul:first-child {
+    padding-top: 0.1em;
+  }
+}
