@@ -136,7 +136,10 @@ li {
 main li {
   font-size: 0.9em;
   padding: 0.2em 0;
+  padding-left: 1.5em;
+  text-indent: -0.74em;
 }
+
 
 #brands img {
   display: block;
@@ -395,5 +398,6 @@ h3::after {
 
   main li {
     padding: 0.5em 0;
+    padding-left: 1.5em;
   }
 }
