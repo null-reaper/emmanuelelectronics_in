@@ -401,3 +401,52 @@ h3::after {
     padding-left: 1.5em;
   }
 }
+
+@media screen and (min-width: 600px) {
+  h1 {
+    font-size: 3.5em;
+  }
+
+  #slogan {
+    font-size: 1.75em;
+  }
+
+  footer {
+    font-size: 0.8em;
+  }
+
+  @supports (display: flex) {
+    nav li {
+      width: 16%;
+    }
+
+    nav i {
+      padding: 0.25em 0 0.18em 0;
+    }
+
+    nav a {
+      padding-bottom: 0.5em;
+    }
+
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  h1 {
+    font-size: 4em;
+  }
+
+  #slogan {
+    font-size: 1.86em; 
+  }
+
+  @supports (display: flex) {
+    nav li {
+      font-size: 1.6em;
+    }
+
+    nav i {
+      padding-bottom: 0.33em;
+    }
+  }
+}
