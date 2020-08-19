@@ -133,11 +133,21 @@ li {
   list-style: none;
 }
 
+#companies,
+#accreditations,
+#certifications {
+  text-align: center;
+}
+
+main ul {
+  display: inline-block;
+  text-align: left;
+}
+
 main li {
   font-size: 0.9em;
   padding: 0.2em 0;
   padding-left: 1.5em;
-  text-align: center;
   text-indent: -0.74em;
 }
 
