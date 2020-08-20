@@ -147,10 +147,12 @@ main ul {
 main li {
   font-size: 0.9em;
   padding: 0.2em 0;
+}
+
+#about main li {
   padding-left: 1.5em;
   text-indent: -0.74em;
 }
-
 
 #brands img {
   display: block;
@@ -171,6 +173,53 @@ i {
   margin: 0.1em;
 }
 
+/* -- Contact Page --*/
+#c2,
+#name {
+  display: none;
+}
+
+#contact-opening {
+  background-color: #daff26;
+  color: #4b26ff;
+  font-weight: bold;
+  padding: 0.5em;
+  text-align: center;
+}
+
+#contact iframe {
+  height: 100px;
+  margin-bottom: 0.33em;
+  max-width: 100%;
+}
+
+#contact main i {
+  display: block;
+}
+
+#phone p,
+#email p {
+  color: #888;
+  text-align: center;
+  word-break: break-all;
+}
+
+form {
+  border: 0.1em solid #2f4f4f;
+  max-width: 100%;
+}
+
+label,
+input,
+textarea {
+  display: block;
+  margin: 0.2em auto;
+  max-width: 90%;
+}
+
+.inp-btn {
+  margin-top: 0.33em;
+}
 
 /* Layout Styles */
 
