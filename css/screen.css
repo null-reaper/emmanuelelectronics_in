@@ -173,6 +173,10 @@ i {
   margin: 0.1em;
 }
 
+.hidden {
+  display: none;
+}
+
 /* -- Contact Page --*/
 #contact-opening {
   background-color: #daff26;
@@ -199,7 +203,6 @@ iframe {
 
 /* Layout Styles */
 
-#contact main i,
 #c2,
 #name {
   display: none;
@@ -446,6 +449,10 @@ form {
     height: 200px;
   }
 
+  #contact-opening {
+    font-size: 1.41em;
+  }
+
   @supports (display: flex) {
     nav li {
       width: 30%;
@@ -514,6 +521,20 @@ form {
   textarea {
     margin-top: 0.5em;
   }
+
+  .inp-btn {
+    font-size: 1em;
+  }
+
+  #contactInfo {
+    margin-top: 0.5em;
+  }
+}
+
+@media screen and (min-width: 450px) {
+  #contact-opening {
+    font-size: 1.8em;
+  }
 }
 
 @media screen and (min-width: 500px) {
@@ -525,6 +546,7 @@ form {
   iframe {
     height: 250px;
   }
+
 }
 
 @media screen and (min-width: 600px) {
@@ -570,6 +592,14 @@ form {
     height: 300px;
   }
 
+  #contact-opening {
+    font-size: 2em;
+  }
+
+  #contactInfo {
+    margin-top: 1.2em;
+  }
+
   footer {
     font-size: 0.8em;
   }
@@ -598,6 +628,10 @@ form {
   #brands img {
     width: 7em;
   }
+
+  iframe {
+    height: 350px;
+  }
 }
 
 @media screen and (min-width: 800px) {
@@ -616,10 +650,109 @@ form {
   }
 }
 
+@media screen and (min-width: 850px) {
+  iframe {
+    height: 400px;
+  }
+}
+
 @media screen and (min-width: 900px) {
   #partners {
     grid-template-columns: 1fr 1fr 1fr 1fr;
   }
+
+  #calling-card {
+    display: grid;
+    grid-template-columns: 12fr 8fr 1fr;
+  }
+
+  @supports (display: grid) {
+    #calling-card {
+      border: 0.1em solid #2f4f4f;
+      margin: 0 auto;
+      width: 53em;
+    }
+
+    #c {
+      display: none;
+    }
+
+    #c2,
+    #name {
+      display: block;
+    }
+
+    #name {
+      display: flex;
+      margin: 0 auto;
+      grid-column: 1 / -1;
+    }
+
+    #c-ace {
+      margin: auto 1em;
+      order: -1;
+      width: 7em;
+    }
+
+    #name h4 {
+      font-size: 2.5em;
+      margin: 0.5em 0.5em 0 0;
+    }
+
+    #name i {
+      font-size: 0.55em;
+    }
+
+    #address {
+      display: contents;
+    }
+
+    iframe {
+      grid-column: 1 / 2;
+      grid-row: 2 / 5;
+      height: 250px;
+      margin: 0 auto 2em auto;
+      width: 80%;
+    }
+
+    #address h4,
+    #phone h4,
+    #email h4 {
+      display: none;
+    }
+
+    #address,
+    #phone,
+    #email {
+      font-size: 0.8em;
+      grid-column: 2 / 3;
+      grid-row: 2 / 3;
+      margin: auto;
+    }
+
+    #phone {
+      grid-row: 3 / 4;
+    }
+
+    #email {
+      grid-row: 4 / 5;
+    }
+
+    #phone p,
+    #email p {
+      word-break: keep-all;
+    }
+
+    #contact h3::after {
+      display: none;
+    }
+
+    #address p {
+      margin-left: 1.2em;
+    }
+
+  }
+
 }
 
 @media screen and (min-width: 1200px) {
@@ -647,6 +780,37 @@ form {
     font-size: 1.3em;
   }
 
+  #contact main {
+    display: grid;
+    grid-template-columns: 5fr 2fr;
+  }
+
+  #contactInfo {
+    margin-top: 1.6em;
+  }
+
+  @supports (display: grid) {
+    #contact-opening {
+      grid-column: 1 / -1;
+    }
+
+    #enquiry {
+      margin: auto;
+    }
+
+    #calling-card {
+      width: 50em;
+    }
+
+    #address p {
+      margin-left: 1.6em;
+    }
+
+    #enquiry h3 {
+      font-size: 1.8em;
+    }
+  }
+
   @supports (display: flex) {
     nav li {
       font-size: 1.6em;
@@ -654,6 +818,22 @@ form {
 
     nav i {
       padding-bottom: 0.33em;
+    }
+  }
+}
+
+@media screen and (min-width: 1300px) {
+  @supports (display: grid) {
+    #calling-card {
+      width: 53em;
+    }
+
+    #address p {
+      padding-left: 1.2em;
+    }
+
+    #enquiry h3 {
+      font-size: 2em;
     }
   }
 }
