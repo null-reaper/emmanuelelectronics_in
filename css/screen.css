@@ -31,6 +31,10 @@ a {
   text-decoration: none;
 }
 
+#product main a {
+  color: black;
+}
+
 footer a,
 h1 a {
   color: pink;
@@ -227,6 +231,7 @@ iframe {
 #product main {
   margin-bottom: 2em;
 }
+
 #product img {
   max-width: 10em;
   width: 90%;
@@ -235,6 +240,20 @@ iframe {
 #product h3,
 #product h4 {
   line-height: 1.2em;
+}
+
+#product main a:hover {
+  background-color: #999999;
+  opacity: 0.22;
+}
+
+#product main a:active {
+  background-color: black;
+  opacity: 0.055;
+}
+
+#product #slogan {
+  margin-top: -0.45em;
 }
 
 
@@ -420,9 +439,9 @@ form {
 }
 
 /* -- Product Page -- */
-#product section {
+#product a {
   border: 0.1em solid black;
-  margin-bottom: 0.5EM;
+  margin-bottom: 0.5em;
 }
 
 #product img {
