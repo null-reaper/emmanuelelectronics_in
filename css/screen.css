@@ -139,11 +139,13 @@ li {
 
 #companies,
 #accreditations,
-#certifications {
+#certifications,
+.centered {
   text-align: center;
 }
 
-main ul {
+main ul,
+.item main ul {
   display: inline-block;
   text-align: left;
 }
@@ -157,6 +159,13 @@ main li {
 #record main li {
   padding-left: 1.5em;
   text-indent: -0.74em;
+}
+
+.item main li {
+  line-height: 1.44em;
+  padding-bottom: 0.5em;
+  padding-left: 1.1em;
+  text-indent: -0.64em;
 }
 
 #brands img {
@@ -250,6 +259,49 @@ iframe {
 #product main a:active {
   background-color: black;
   opacity: 0.055;
+}
+
+.prod-img {
+  display: block;
+  margin: 0.5em auto 1em auto;
+  max-width: 20em;
+  width: 100%;
+}
+
+.download-btn {
+  border: 0.1em double #303030;
+  color: black;
+  display: block;
+  text-align: center;
+  margin: 1em auto 1em auto;
+  max-width: 10em;
+  width: 10s0%;
+}
+
+.download-btn:hover,
+.download-btn:active {
+  background-color: black;
+  color: white;
+  opacity: 0.6;
+}
+
+.download-btn:active {
+  color: black;
+}
+
+.item p {
+  margin-bottom: 0.5em;
+}
+
+h5 {
+  line-height: 1.2em;
+  font-weight: bold;
+  margin: 1em 0 0.5em 0;
+  text-align: center;
+}
+
+.item i {
+  padding-right: 0.2em;
 }
 
 
@@ -544,6 +596,15 @@ form {
     grid-template-columns: repeat(2, 1fr);
   }
 
+  .download-btn {
+    font-size: 1.2em;
+    padding: 0.2em;
+  }
+
+  h5 {
+    font-size: 1.2em;
+  }
+
   @supports (display: grid) {
     #brands h3 {
       grid-column: 1 / -1;
@@ -697,6 +758,16 @@ form {
   #shopping {
     grid-template-columns: repeat(3, 1fr);
   }
+
+  .download-btn {
+    font-size: 1.5em;
+    padding: 0.33em;
+  }
+
+  h5 {
+    font-size: 1.5em;
+    margin: 1.5em 0 0.77em 0;
+  }
 }
 
 @media screen and (min-width: 450px) {
@@ -841,6 +912,11 @@ form {
     padding-left: 2em;
     text-indent: -1.02em;
   }
+
+  .download-btn {
+    font-size: 1.8em;
+    padding: 0.4em;
+  }
 }
 
 @media screen and (min-width: 850px) {
@@ -854,6 +930,10 @@ form {
     grid-template-columns: repeat(7, 1fr);
   }
 
+  h5 {
+    font-size: 1.8em;
+    margin: 1.8em 0 0.9em 0;
+  }
 
 }
 
