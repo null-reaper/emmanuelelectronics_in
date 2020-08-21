@@ -252,10 +252,6 @@ iframe {
   opacity: 0.055;
 }
 
-#product #slogan {
-  margin-top: -0.45em;
-}
-
 
 /* Layout Styles */
 
@@ -439,7 +435,7 @@ form {
 }
 
 /* -- Product Page -- */
-#product a {
+#product main a {
   border: 0.1em solid black;
   margin-bottom: 0.5em;
 }
