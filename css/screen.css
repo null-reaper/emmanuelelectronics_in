@@ -340,6 +340,32 @@ h5 {
   to {opacity: 1}
 }
 
+#quick-links h4 {
+  line-height: 1.2em;
+}
+
+.qlink-img {
+  display: block;
+  margin: 0.5em auto;
+  width: 70%;
+}
+
+.qlink-img:hover {
+  opacity: 0.6;
+}
+
+.qlink-img:active {
+  opacity: 0.2;
+}
+
+#quick-links a:hover {
+  color: #b2b2b2;
+}
+
+#quick-links a:active {
+  color: #eeeeee;
+}
+
 
 /* Layout Styles */
 
@@ -468,6 +494,11 @@ nav ul a {
   }
 }
 
+#quick-links section {
+  display: flex;
+  flex-direction: column-reverse;
+}
+
 
 /* Module Styles */
 
@@ -569,6 +600,12 @@ form {
   #contact h4 {
     font-size: 1.2em;
     line-height: 1.2em;
+  }
+
+  #quick-links {
+    display: grid;
+    grid-column: 1 / -1;
+    grid-template-columns: 1fr 1fr;
   }
 }
 
@@ -685,6 +722,7 @@ form {
   #home-banner {
     display: block;
   }
+
 }
 
 @media screen and (min-width: 350px) {
@@ -716,6 +754,10 @@ form {
 
   #contact-opening {
     font-size: 1.41em;
+  }
+
+  #quick-links {
+    grid-template-columns: repeat(4, 1fr);
   }
 
   @supports (display: flex) {
@@ -831,6 +873,10 @@ form {
     height: 250px;
   }
 
+  #quick-links {
+    margin: 0.5em 1em;
+  }
+
 }
 
 @media screen and (min-width: 600px) {
@@ -919,6 +965,12 @@ form {
   }
 }
 
+@media screen and (min-width: 700px) {
+  #quick-links {
+    margin: 1em 1.5em;
+  }
+}
+
 @media screen and (min-width: 750px) {
   #brands {
     grid-template-columns: 1fr 1fr 1fr 1fr;
@@ -990,6 +1042,14 @@ form {
   #calling-card {
     display: grid;
     grid-template-columns: 12fr 8fr 1fr;
+  }
+
+  .qlink-img {
+    max-width: 12em;
+  }
+
+  #quick-links {
+    margin: 2em;
   }
 
   @supports (display: grid) {
@@ -1076,7 +1136,6 @@ form {
     #address p {
       margin-left: 1.2em;
     }
-
   }
 
 }
