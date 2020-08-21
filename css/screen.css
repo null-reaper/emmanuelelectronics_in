@@ -223,6 +223,20 @@ iframe {
   max-width: 70%;
 }
 
+/* -- Product Page -- */
+#product main {
+  margin-bottom: 2em;
+}
+#product img {
+  max-width: 10em;
+  width: 90%;
+}
+
+#product h3,
+#product h4 {
+  line-height: 1.2em;
+}
+
 
 /* Layout Styles */
 
@@ -405,6 +419,17 @@ form {
   width: 80%;
 }
 
+/* -- Product Page -- */
+#product section {
+  border: 0.1em solid black;
+  margin-bottom: 0.5EM;
+}
+
+#product img {
+  display: block;
+  margin: 0 auto 0.33em auto  ;
+}
+
 
 /* State Styles */
 
@@ -528,6 +553,16 @@ form {
   form {
     margin: 0 auto;
     width: 265px;
+  }
+
+  #product main {
+    display: grid;
+    grid-gap: 0.33em;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  #product main h3 {
+    grid-column: 1 / -1;
   }
 }
 
@@ -724,6 +759,10 @@ form {
 
   #hospitals {
     grid-template-columns: repeat(5, 1fr);
+  }
+
+  #product main {
+    grid-template-columns: repeat(4, 1fr);
   }
 
   @supports (display: flex) {
