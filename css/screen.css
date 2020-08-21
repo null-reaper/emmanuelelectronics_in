@@ -230,9 +230,13 @@ iframe {
   line-height: 1.2em;
 }
 
+#blog main {
+  height: 80vh;
+}
+
 #under-constr {
   display: block;
-  margin: 2em auto;
+  margin: 30vh auto 0 auto;
   max-width: 70%;
 }
 
@@ -410,8 +414,23 @@ h5 {
 
 #error h3 {
   line-height: 1.2em;
+  margin-top: -1em;
 }
 
+#error h4 {
+  border-top: 0.1em solid #808080;
+  font-size: 1em;
+  padding-top: 1em;
+  margin-top: 0.5em;
+}
+
+#error h3::after {
+  display: none;
+}
+
+#error li {
+    align-self: center;
+}
 
 /* Layout Styles */
 
@@ -693,6 +712,15 @@ form {
     max-width: 10em;
   }
 
+  #error h4 {
+    font-size: 1.2em;
+    line-height: 1.44em;
+  }
+
+  #error li {
+    font-size: 1em;
+  }
+
   h1 {
     font-size: 1.8em;
   }
@@ -825,6 +853,20 @@ form {
     grid-template-columns: 1fr 2fr;
   }
 
+  #error h4 {
+    border-top: none;
+    padding-top: 0;
+  }
+
+  #error h3 {
+    margin: auto;
+  }
+
+  #error main ul {
+    grid-row-gap: 0.5em;
+    padding-top: 0.5em;
+  }
+
   @supports (display: grid) {
     #error main img {
       max-width: 100%;
@@ -832,7 +874,7 @@ form {
     }
 
     #error h4,
-    #error ul {
+    #error main ul {
       grid-column: 1 / -1;
     }
   }
