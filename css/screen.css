@@ -275,7 +275,7 @@ iframe {
   text-align: center;
   margin: 1em auto 1em auto;
   max-width: 10em;
-  width: 10s0%;
+  width: 100%;
 }
 
 .download-btn:hover,
@@ -302,6 +302,42 @@ h5 {
 
 .item i {
   padding-right: 0.2em;
+}
+
+/* -- Home Page -- */
+.slide {
+  display: none;
+}
+
+#home main {
+  padding: 0;
+}
+
+#home-banner {
+  display: none;
+  margin-top: -0.62em;
+}
+
+.slideshow-container {
+  margin-top: -1.12em;
+  width: 100%;
+}
+
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-duration: 1.5s;
+  animation-name: fade;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
 }
 
 
@@ -639,6 +675,15 @@ form {
 
   #product main h3 {
     grid-column: 1 / -1;
+  }
+
+  #home main {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  #home-banner {
+    display: block;
   }
 }
 
