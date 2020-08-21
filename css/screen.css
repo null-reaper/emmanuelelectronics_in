@@ -149,7 +149,8 @@ main li {
   padding: 0.2em 0;
 }
 
-#about main li {
+#about main li,
+#record main li {
   padding-left: 1.5em;
   text-indent: -0.74em;
 }
@@ -200,6 +201,22 @@ iframe {
   word-break: break-all;
 }
 
+/* -- Record Page -- */
+#record i {
+  padding-right: 0.28em;
+}
+
+#record main img {
+  border: 0.01em solid #808080;
+  margin: auto;
+  max-width: 100%;
+}
+
+#record h3,
+#record h4 {
+  line-height: 1.2em;
+}
+
 
 /* Layout Styles */
 
@@ -247,6 +264,84 @@ nav ul a {
     margin: auto;
     margin-bottom: 0.5em;
     padding: 0.5em 0.5em 0 0.5em;
+  }
+}
+
+/* -- Record Page -- */
+#airlines,
+#banking,
+#builders,
+#corporate,
+#hospitals,
+#insurance,
+#education,
+#freq-conv,
+#government,
+#hotels,
+#medical,
+#pharmaceuticals,
+#shares,
+#shopping {
+  display: grid;
+  grid-gap: 0.33em;
+  grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+}
+
+#airlines {
+  max-width: 30em;
+}
+
+#banking {
+  max-width: 60em;
+}
+
+#builders,
+#education,
+#pharmaceuticals {
+  max-width: 52.5em;
+}
+
+#diamond img {
+  display: block;
+  margin: 0 auto;
+}
+
+#hospitals,
+#medical,
+#hotels {
+  max-width: 37.5em;
+}
+
+#insurance {
+  max-width: 16em;
+}
+
+#freq-conv,
+#government {
+  max-width: 45em;
+}
+
+#shares {
+  max-width: 67.5em;
+}
+
+#shopping {
+  max-width: 22.5em;
+}
+
+#record #clients h4 {
+  grid-column: 1 / -1;
+}
+
+@supports (display: grid) {
+  #record #clients section {
+    border-top: 0.1em solid #808080;
+    margin: 0 auto 3em auto;
+  }
+
+  #record #clients h4 {
+    font-style: italic;
+    font-weight: bold;
   }
 }
 
@@ -395,6 +490,14 @@ form {
     margin-top: 0.33em;
   }
 
+  #record main li {
+    text-indent: -0.82em;
+  }
+
+  #insurance {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
   @supports (display: grid) {
     #brands h3 {
       grid-column: 1 / -1;
@@ -529,6 +632,15 @@ form {
   #contactInfo {
     margin-top: 0.5em;
   }
+
+  #record main li {
+    padding-left: 1.8em;
+    text-indent: -0.97em;
+  }
+
+  #shopping {
+    grid-template-columns: repeat(3, 1fr);
+  }
 }
 
 @media screen and (min-width: 450px) {
@@ -604,6 +716,10 @@ form {
     font-size: 0.8em;
   }
 
+  #hospitals {
+    grid-template-columns: repeat(5, 1fr);
+  }
+
   @supports (display: flex) {
     nav li {
       width: 16%;
@@ -620,6 +736,13 @@ form {
   }
 }
 
+@media screen and (min-width: 650px) {
+  #hotels,
+  #medical {
+    grid-template-columns: repeat(5, 1fr);
+  }
+}
+
 @media screen and (min-width: 750px) {
   #brands {
     grid-template-columns: 1fr 1fr 1fr 1fr;
@@ -631,6 +754,11 @@ form {
 
   iframe {
     height: 350px;
+  }
+
+  #freq-conv,
+  #government {
+    grid-template-columns: repeat(6, 1fr);
   }
 }
 
@@ -648,12 +776,25 @@ form {
   #partners {
     grid-template-columns: 1fr 2fr 2fr 1fr;
   }
+
+  #record main li {
+    padding-left: 2em;
+    text-indent: -1.02em;
+  }
 }
 
 @media screen and (min-width: 850px) {
   iframe {
     height: 400px;
   }
+
+  #builders,
+  #education,
+  #pharmaceuticals {
+    grid-template-columns: repeat(7, 1fr);
+  }
+
+
 }
 
 @media screen and (min-width: 900px) {
@@ -755,6 +896,18 @@ form {
 
 }
 
+@media screen and (min-width: 950px) {
+  #banking {
+    grid-template-columns: repeat(8, 1fr);
+  }
+}
+
+@media screen and (min-width: 1050px) {
+  #shares {
+    grid-template-columns: repeat(9, 1fr);
+  }
+}
+
 @media screen and (min-width: 1200px) {
   h1 {
     font-size: 4em;
@@ -809,6 +962,10 @@ form {
     #enquiry h3 {
       font-size: 1.8em;
     }
+  }
+
+  #record main li {
+    padding-left: 2.5em;
   }
 
   @supports (display: flex) {
