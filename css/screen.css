@@ -230,8 +230,9 @@ iframe {
   line-height: 1.2em;
 }
 
-#blog main {
-  height: 80vh;
+#blog main,
+#error main {
+  height: 50vh;
 }
 
 #under-constr {
