@@ -230,13 +230,9 @@ iframe {
   line-height: 1.2em;
 }
 
-#blog main {
-  height: 50vh;
-}
-
 #under-constr {
   display: block;
-  margin: 20vh auto 0 auto;
+  margin: 3em auto;
   max-width: 70%;
 }
 
